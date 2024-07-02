@@ -1,0 +1,9 @@
+{
+    "category": "texture",
+    "description": "{object} has a {skill} texture.",
+    "skill": {
+        "glass": "",
+        "metallic": "",
+        "fluffy": ""
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "category": "spatial",
+    "description": "{ObjectA} is {skill} {ObjectB}.",
+    "skill": {
+        "top": "{ObjectA} is on top of {ObjectB}, meaning {ObjectA} is positioned above or at the highest point of {ObjectB}, touching each other",
+        "bottom": "{ObjectA} is at the bottom of {ObjectB}, meaning {ObjectA} is positioned below or at the lowest point of {ObjectB}, touching each other",
+        "above": "{ObjectA} is above {ObjectB}, meaning {ObjectA} is positioned higher than {ObjectB} without touching it",
+        "below": "{ObjectA} is below {ObjectB}, meaning {ObjectA} is positioned lower than {ObjectB} without touching it",
+        "left": "{ObjectA} is positioned on the left side of {ObjectB}",
+        "right": "{ObjectA} is positioned on the right side of {ObjectB}",
+        "behind": "{ObjectA} is behind {ObjectB}, meaning {ObjectA} is positioned farther from the observer or camera than {ObjectB}",
+        "in front of": "{ObjectA} is in front of {ObjectB}, meaning {ObjectA} is positioned nearer to the observer or camera than {ObjectB}",
+        "inside": "{ObjectA} is inside {ObjectB}, meaning {ObjectA} is positioned within the boundaries or interior of {ObjectB}",
+        "outside": "{ObjectA} is outside of {ObjectB}, meaning {ObjectA} is positioned beyond the boundaries or exterior of {ObjectB}"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "category": "style",
+    "description": "the style of the image is {skill}.",
+    "skill": {
+        "cartoon": "",
+        "abstract": "",
+        "impressionism": "",
+        "surrealism": "",
+        "expressionism": "",
+        "pop art": "",
+        "photorealism": "",
+        "cubism": "",
+        "graffiti": "",
+        "manga": "",
+        "pixel art": "",
+        "watercolor": "",
+        "sketch": "",
+        "oil painting": "",
+        "ink": ""
+    }
+}

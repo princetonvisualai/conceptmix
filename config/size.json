@@ -1,0 +1,8 @@
+{
+    "category": "size",
+    "description": "{object} has a {skill} size.",
+    "skill": {
+        "tiny": "",
+        "huge": ""
+    }
+}

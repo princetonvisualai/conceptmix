@@ -1,0 +1,11 @@
+{
+  "category": "shape",
+  "description": "{object} is {skill} shaped.",
+  "skill": {
+    "circle": "",
+    "square": "",
+    "rectangle": "",
+    "triangle": "",
+    "heart": ""
+  }
+}

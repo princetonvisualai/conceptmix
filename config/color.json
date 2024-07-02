@@ -1,0 +1,17 @@
+{
+    "category": "color",
+    "description": "the color of {object} is {skill}", 
+    "skill": {
+        "red": "",
+        "blue": "",
+        "yellow": "",
+        "green": "",
+        "purple": "",
+        "orange": "",
+        "pink": "",
+        "brown": "",
+        "black": "",
+        "white": "",
+        "gray": ""
+    }
+}
