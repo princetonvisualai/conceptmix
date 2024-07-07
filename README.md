@@ -1,6 +1,6 @@
 # ConceptMix
 
-ConceptMix is a flexible and scalable evaluation benchmark for compositional image generation models. This project provides various tools and scripts to generate and evaluate images based on textual descriptions, supporting research in visual factuality and other related areas.
+We propose CONCEPTMIX, a scalable and customizable benchmark for evaluating the compositional capabilities of T2I models, including prompts from 8 visual concept categories.
 
 ## Table of Contents
 
