@@ -1,13 +1,20 @@
 # ConceptMix
 
 
-**ConceptMix: A Compositional Image Generation Benchmark with Controllable Difficulty** (NeurIPS 2024, Dataset and Benchmark Track) [[paper](https://arxiv.org/abs/2408.14339)][[website](https://princetonvisualai.github.io/conceptmix/)]
+**ConceptMix: A Compositional Image Generation Benchmark with Controllable Difficulty** 
+
+NeurIPS 2024, Dataset and Benchmark Track [[paper](https://arxiv.org/abs/2408.14339)][[website](https://princetonvisualai.github.io/conceptmix/)]
 
 
 [Xindi Wu\*](https://xindiwu.github.io/), [Dingli Yu\*](https://dingliyu.net/), [Yangsibo Huang\*](https://hazelsuko07.github.io/yangsibo/), [Olga Russakovsky](https://www.cs.princeton.edu/~olgarus/), [Sanjeev Arora](https://www.cs.princeton.edu/~arora/)
 
 
 We propose ConceptMix, a scalable and customizable benchmark for evaluating the compositional capabilities of T2I models, including prompts from 8 visual concept categories.
+
+## News 🔥
+- [10/24] We have released the 300 x 7 prompts used for evaluation in the [`sentence_collection`](https://github.com/princetonvisualai/conceptmix/tree/main/sentence_collection) folder for public use.
+- [09/24] Our paper [ConceptMix](https://arxiv.org/abs/2408.14339) has been accepted to NeurIPS 2024, Dataset and Benchmark Track.
+
 
 ## Table of Contents
 
