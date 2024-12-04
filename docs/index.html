@@ -58,6 +58,24 @@
       color: #4A90E2;  /* You can change this hex color code to your preferred color */
       font-weight: bold;
     }
+    .carousel {
+      margin: 0 auto;
+      width: fit-content !important;
+    }
+    .carousel-image {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+    .slider {
+      width: fit-content !important;
+      margin: 0 auto !important;
+    }
+    .slider-navigation-previous,
+    .slider-navigation-next {
+      margin: 0 10px;
+    }
   </style>
 </head>
   
@@ -175,28 +193,32 @@
 
 <section class="hero is-light is-small">
   <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item">
-          <img src="./static/images/1.png" alt="Example 1" class="carousel-image">
-        </div>
-        <div class="item">
-          <img src="./static/images/2.png" alt="Example 2" class="carousel-image">
-        </div>
-        <div class="item">
-          <img src="./static/images/3.png" alt="Example 3" class="carousel-image">
-        </div>
-        <div class="item">
-          <img src="./static/images/4.png" alt="Example 4" class="carousel-image">
-        </div>
-        <div class="item">
-          <img src="./static/images/5.png" alt="Example 5" class="carousel-image">
-        </div>
-        <div class="item">
-          <img src="./static/images/6.png" alt="Example 6" class="carousel-image">
-        </div>
-        <div class="item">
-          <img src="./static/images/7.png" alt="Example 7" class="carousel-image">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-four-fifths">
+          <div id="results-carousel" class="carousel results-carousel">
+            <div class="item">
+              <img src="./static/images/1.png" alt="Example 1" class="carousel-image">
+            </div>
+            <div class="item">
+              <img src="./static/images/2.png" alt="Example 2" class="carousel-image">
+            </div>
+            <div class="item">
+              <img src="./static/images/3.png" alt="Example 3" class="carousel-image">
+            </div>
+            <div class="item">
+              <img src="./static/images/4.png" alt="Example 4" class="carousel-image">
+            </div>
+            <div class="item">
+              <img src="./static/images/5.png" alt="Example 5" class="carousel-image">
+            </div>
+            <div class="item">
+              <img src="./static/images/6.png" alt="Example 6" class="carousel-image">
+            </div>
+            <div class="item">
+              <img src="./static/images/7.png" alt="Example 7" class="carousel-image">
+            </div>
+          </div>
         </div>
       </div>
     </div>
