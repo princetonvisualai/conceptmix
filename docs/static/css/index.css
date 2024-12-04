@@ -114,6 +114,7 @@ body {
   overflow: hidden;
   width: fit-content;
   margin: 0 auto;
+  padding: 20px;
 }
 
 .results-carousel .item {
@@ -124,6 +125,7 @@ body {
   padding: 0;
   font-size: 0;
   width: fit-content;
+  display: block;
 }
 
 .results-carousel video {
@@ -157,4 +159,23 @@ body {
 }
 #interpolation-image-wrapper img {
   border-radius: 5px;
+}
+
+.carousel-image {
+  max-width: 800px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.slider {
+  width: fit-content !important;
+  margin: 0 auto !important;
+}
+
+.slider-navigation-previous,
+.slider-navigation-next {
+  margin: 0 10px;
+  height: 100%;
+  transform: translateY(-50%);
 }

@@ -35,7 +35,7 @@ $(document).ready(function() {
 			loop: true,
 			infinite: true,
 			autoplay: false,
-			autoplaySpeed: 3000,
+			autoplaySpeed: 7000,
     }
 
 		// Initialize all div with carousel class
@@ -76,3 +76,15 @@ $(document).ready(function() {
     bulmaSlider.attach();
 
 })
+
+document.addEventListener('DOMContentLoaded', function() {
+  var carousels = bulmaCarousel.attach('#results-carousel', {
+    slidesToScroll: 1,
+    slidesToShow: 1,
+    loop: true,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 7000,
+    navigation: true
+  });
+});
