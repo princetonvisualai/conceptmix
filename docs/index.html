@@ -54,6 +54,10 @@
       margin-right: auto;
       width: 50%; /* Adjust the size as needed */
     }
+    .conference-text {
+      color: #4A90E2;  /* You can change this hex color code to your preferred color */
+      font-weight: bold;
+    }
   </style>
 </head>
   
@@ -92,7 +96,7 @@
             <img src="./static/images/logo.png" alt="ConceptMix">
             <h1 class="title is-1 publication-title">ConceptMix</h1>
           </div>
-          <h2 class="subtitle is-3 publication-subtitle">A Compositional Benchmark for Evaluating Text-to-Image Models</h2>
+          <h2 class="subtitle is-3 publication-subtitle">A Compositional Image Generation Benchmark with Controllable Difficulty</h2>
           <div class="is-size-5 publication-authors">
             <span class="author-block"><a href="https://xindiwu.github.io/">Xindi Wu</a><sup>*</sup>,</span>
             <span class="author-block"><a href="https://dingliyu.net/">Dingli Yu</a><sup>*</sup>,</span>
@@ -102,6 +106,9 @@
           </div>
           <div class="is-size-5 publication-authors">
             <span class="author-block">Princeton University</span>
+          </div>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block conference-text">[NeurIPS 2024 D&B]</span>
           </div>
           <div class="column has-text-centered">
             <div class="publication-links">
@@ -141,6 +148,12 @@
                   <span>Slides</span>
                 </a>
               </span>
+              <span class="link-block">
+                <a href="https://openreview.net/forum?id=MU2s9wwWLo" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fas fa-external-link-alt"></i></span>
+                  <span>OpenReview</span>
+                </a>
+              </span>
             </div>
           </div>
         </div>
@@ -160,7 +173,6 @@
   </div>
 </section>
 
-<!-- 
 <section class="hero is-light is-small">
   <div class="hero-body">
     <div class="container">
@@ -190,7 +202,6 @@
     </div>
   </div>
 </section>
- -->
 
 <section class="section">
   <div class="container is-max-desktop">
@@ -199,17 +210,17 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Compositionality is a critical capability in Text-to-Image (T2I) models, as it reflects their ability to understand and combine multiple concepts from text descriptions. Existing evaluations of compositional capability rely heavily on human-designed text prompts or fixed templates, limiting their diversity and complexity, and so the evaluations have low discriminative power. We propose ConceptMix, a scalable, controllable, and customizable benchmark consisting of two stages: (a) With categories of visual concepts (e.g., objects, colors, shapes, spatial relationships), it randomly samples an object and k-tuples of visual concepts to generate text prompts with GPT-4o for image generation. (b) To automatically evaluate generation quality, ConceptMix uses an LLM to generate one question per visual concept, allowing automatic grading of whether each specified concept...
+            Compositionality is a critical capability in Text-to-Image (T2I) models, as it reflects their ability to understand and combine multiple concepts from text descriptions. Existing evaluations of compositional capability rely heavily on human-designed text prompts or fixed templates, limiting their diversity and complexity, and so the evaluations have low discriminative power. We propose ConceptMix, a scalable, controllable, and customizable benchmark consisting of two stages: (a) With categories of visual concepts (e.g., objects, colors, shapes, spatial relationships), it randomly samples an object and k-tuples of visual concepts to generate text prompts with GPT-4o for image generation. (b) To automatically evaluate generation quality, ConceptMix uses an LLM to generate one question per visual concept, allowing automatic grading of whether each specified concept.
           </p>
         </div>
-        <div class="has-text-centered">
-          <img src="./static/images/comparison.png">
-        </div>
-        <div class="has-text-centered">
+        
+        <div class="content has-text-centered">
+          <img src="./static/images/teaser.png" alt="ConceptMix Overview" style="width: 100%; max-width: 800px;">
           <p>
-            <b>Figure:</b> Many open-source models surpass proprietary model performance on existing benchmarks yet fail consistently in reasoning questions from <span class="fancy_text_color">ConceptMix</span>.
+            <b>Overview of CONCEPTMIX benchmark for T2I models.</b>
           </p>
-        </div>      
+        </div>
+
         <br>
         <h2 class="title is-3" id="leaderboard"><span class="fancy_text_color">Leaderboard</span></h2>
         <div class="content"> 
@@ -331,9 +342,9 @@
             </tbody>
           </table>
         </div>
-        <div class="content">
+        <!-- <div class="content">
           <p>If you have a model you'd like to see on the leaderboard, please submit it <a href="submission-link">here</a>.</p>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
@@ -365,16 +376,16 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3" id="performance-concept-categories">Performance Across Concept Categories</h2>
+        <h2 class="title is-3" id="performance-concept-categories">Performance on Individual Concept Categories (k=1)</h2>
         <div class="content has-text-justified">
           <p>
             We evaluate the performance of T2I models across different concept categories. Color and style are easier, with all models achieving high scores. Performance is lower for generating specific numbers of objects and spatial relationships, with varying results for texture and size. Overall, DALL·E 3 outperforms others in all categories.
           </p>
           <div class="has-text-centered">
-            <img src="static/images/individual_concept.png" alt="Performance Across Concept Categories">
+            <img src="static/images/individual_concept.png" alt="Performance Across Concept Categories" style="width: 100%; max-width: 800px;">
           </div>
           <p>
-            <b>Performance Across Concept Categories.</b>  The bar graph shows how different models perform across various visual concept categories.
+            <b>Performance Across Concept Categories.</b>  We evaluate T2I models across concept categories, finding high scores for color and style but lower performance for object counts and spatial relationships. DALL·E 3 outperforms others across all categories.
           </p>
         </div>
       </div>
@@ -382,6 +393,24 @@
   </div>
 </section>
 
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3" id="compositional-performance">Performance of Compositional Generation (k > 1)</h2>
+        <div class="content has-text-justified">
+          <div class="has-text-centered">
+            <img src="./static/images/comparison.png" style="width: 95%; max-width: 700px;">
+          </div>
+          <p>
+            <b>ConceptMix Shows Stronger Discriminative Power:</b> ConceptMix, with varying difficulty levels (k), clearly distinguishes model performance, with gaps widening as k increases.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
