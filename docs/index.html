@@ -155,6 +155,9 @@
             <span class="author-block">Princeton University</span>
           </div>
           <div class="is-size-5 publication-authors">
+            <span class="author-block" style="font-size: 0.9em; color: #666;">* Equal Contribution</span>
+          </div>
+          <div class="is-size-5 publication-authors">
             <span class="author-block conference-text">[NeurIPS 2024 D&B]</span>
           </div>
           <div class="publication-authors presentation-details">
@@ -204,6 +207,12 @@
                 <a href="https://www.canva.com/design/DAGJuhb5hm4/XHQ-j2f009hUyppIaDzCKA/view?utm_content=DAGJuhb5hm4&utm_campaign=designshare" class="external-link button is-normal is-rounded is-dark">
                   <span class="icon"><i class="fas fa-file-powerpoint"></i></span>
                   <span>Slides</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="static/data/poster.pdf" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fas fa-file-image"></i></span>
+                  <span>Poster</span>
                 </a>
               </span>
               <span class="link-block">
@@ -412,26 +421,7 @@
   </div>
 </section>
 
-<section class="section">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3" id="concept-diversity">LAION-5B Concept Diversity</h2>
-        <div class="content has-text-justified">
-          <p>
-            The LAION-5B dataset is analyzed for concept diversity, the heatmap below showcases the frequency of these visual concepts in sampled captions.
-          </p>
-          <div class="has-text-centered">
-            <img src="static/images/caption.png" alt="Concept Diversity in LAION-5B Dataset">
-          </div>
-          <p>
-            <b>Concept Diversity in LAION-5B Dataset.</b>  Left: Heatmap of sampled captions shows colors and styles are most frequent; shapes and spatial relationships are least. Right: Most examples include 2-3 concepts.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+
 
 
 <section class="section">
@@ -466,7 +456,52 @@
             <img src="./static/images/comparison.png" style="width: 95%; max-width: 700px;">
           </div>
           <p>
-            <b>ConceptMix Shows Stronger Discriminative Power:</b> ConceptMix, with varying difficulty levels (k), clearly distinguishes model performance, with gaps widening as k increases.
+            <b>ConceptMix Shows Stronger Discriminative Power:</b> 
+            We compare five models using 3-in-1 and GPT4v scores (global prompt-level) from T2I-CompBench, and ConceptMix with varying difficulty levels (k). ConceptMix, with varying difficulty levels (k), clearly distinguishes model performance, with gaps widening as k increases.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3" id="qualitative-performance">Qualitative Performance of Different T2I Models</h2>
+        <div class="content has-text-justified">
+          <p>
+            We compare the qualitative performance of different T2I models (SD v1.4, SD v2.1, PixArt alpha, Playground v2.5, DALL·E 3) across varying levels of compositional complexity (k = 1...7). As prompts become more complex, image quality degrades. DALL·E 3 performs best, while SD v1.4 performs worst.
+          </p>
+          <div class="has-text-centered">
+            <img src="static/images/qualitative.png" alt="Qualitative Performance Comparison" style="width: 100%; max-width: 800px;">
+          </div>
+          <p>
+            <b>Qualitative Comparison:</b> Visual comparison of generated images across different models and complexity levels (k), showing degrading performance with increasing prompt complexity.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3" id="concept-diversity">LAION-5B Concept Diversity</h2>
+        <div class="content has-text-justified">
+          <p>
+            The LAION-5B dataset is analyzed for concept diversity, the heatmap below showcases the frequency of these visual concepts in sampled captions.
+          </p>
+          <div class="has-text-centered">
+            <img src="static/images/caption.png" alt="Concept Diversity in LAION-5B Dataset">
+          </div>
+          <p>
+            <b>Concept Diversity in LAION-5B Dataset.</b>  Left: Heatmap of sampled captions shows colors and styles are most frequent; shapes and spatial relationships are least. Right: Most examples include 2-3 concepts.
           </p>
         </div>
       </div>
